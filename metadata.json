@@ -1,0 +1,6 @@
+{
+  "name": "Grandmaster Board — Chess Analysis & AI Studio",
+  "description": "Chess.com-inspired interactive chess analysis board powered by asynchronous Stockfish Web Workers, real-time move classification badges, dynamic SVG arrows, and multi-phase AI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

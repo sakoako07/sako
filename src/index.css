@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+
+  html,
+  body {
+    font-family: var(--font-sans);
+    background-color: #1b1a17;
+    color: #f1f0ec;
+  }
+}
+
+.font-mono-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom sleek scrollbar for move history */
+.chess-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.chess-scroll::-webkit-scrollbar-track {
+  background: #21201d;
+}
+
+.chess-scroll::-webkit-scrollbar-thumb {
+  background: #3d3b37;
+  border-radius: 3px;
+}
+
+.chess-scroll::-webkit-scrollbar-thumb:hover {
+  background: #524f49;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
